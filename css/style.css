@@ -156,6 +156,7 @@ h3 {
 }
 .icon-diamond {
     background: url(../images/icon-diamond.png) no-repeat;
+    background-size: 50%;
     grid-row: 6/7;
     grid-column: 2/3;
     margin-left: 6vw;
@@ -163,31 +164,44 @@ h3 {
 }
 .icon-diamond:hover {
     background: url(../images/icon-diamond-hover.png) no-repeat;
+    background-size: 50%;
 }
 .icon-infinite {
     background: url(../images/icon-infinite.png) no-repeat;
+    background-size: 50%;
     grid-row: 6/7;
     grid-column: 2/3;
     margin-left: 6vw;
     margin-top: 9vw;
 }
-.icon-infinite:hover {background: url(../images/icon-infinite-hover.png) no-repeat;}
+.icon-infinite:hover {
+    background: url(../images/icon-infinite-hover.png) no-repeat;
+    background-size: 50%;
+}
 .icon-bonus {
-    background: url(../images/icons-bonus.png) no-repeat;    
+    background: url(../images/icons-bonus.png) no-repeat;
+    background-size: 50%;
     grid-row: 6/7;
     grid-column: 2/3;
     margin-left: 6vw;
     margin-top: 17vw;
 }
-.icon-bonus:hover {background: url(../images/icons-bonus-hover.png) no-repeat;}
+.icon-bonus:hover {
+    background: url(../images/icons-bonus-hover.png) no-repeat;
+    background-size: 50%;
+}
 .icon-discount {
-    background: url(../images/icon-discount.png) no-repeat;    
+    background: url(../images/icon-discount.png) no-repeat;
+    background-size: 50%;
     grid-row: 6/7;
     grid-column: 2/3;
     margin-left: 5vw;
     margin-top: 25vw;
 }
-.icon-discount:hover {background: url(../images/icon-discount-hover.png) no-repeat;}
+.icon-discount:hover {
+    background: url(../images/icon-discount-hover.png) no-repeat;
+    background-size: 50%;
+}
 .splashimage {
     grid-row: 6/7;
     grid-column: 3/5;
@@ -202,8 +216,9 @@ h3 {
     width: 23vw;
     height: 16vw;
     transform: rotate(45deg);
-    padding-top: 15vw;
-    padding-left: 13vw;    
+    margin-top: 18vw;
+    margin-left: 6vw;
+    box-shadow: 5px 5px 20px 1px #000000;
 }
 /*form section*/
 .area-item--11 {
