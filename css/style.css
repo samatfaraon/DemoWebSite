@@ -1,0 +1,229 @@
+area-item {
+    width: 100%;
+    height: 100%;
+}
+.area-container {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-rows: 4vw 40vw 7vw 15vw 3vw 35vw 2vw 20vw 2vw 5vw;
+    grid-template-columns: 1vw repeat(5, 1fr) 1vw;
+    grid-template-areas:". logo . . menu2 menu3 ."
+                        ". banner banner banner banner banner ."
+                        ". . . . . . ."
+                        ". promo1 promo2 promo3 promo4 promo5 ."
+                        ". . . . . . ."
+                        ". advantages advantages advantages form form ."
+                        ". . . . . . ."
+                        ". review1 review2 review3 review4 review5 ."
+                        ". . . . . . ."
+                        ". footer footer footer footer footer .";
+}
+img {    
+    width: 100%;
+    height: 100%;
+}
+/*logo section*/
+.area-item--1 {
+    grid-area: logo;
+    background: url(../images/logo.png);
+    background-size: 100%;
+    width: 7vw;
+    height: 5vw;
+}
+.area-item--1:hover {
+    background: url(../images/logo-hover.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+/*menu section*/
+.area-item--2 {
+    grid-area: menu2;
+}
+.area-item--3 {
+    grid-area: menu3;
+}
+.area-item--2, .area-item--3 {
+    text-align: right;
+    margin-top: 1.6vw;
+    margin-right: 2vw;
+    font-weight: 550;
+}
+.area-item--2:hover, .area-item--3:hover {
+    cursor: pointer;
+    color: red;
+    border-right: red solid .5vw;
+    padding-right: 1vw;
+}
+/*banner section*/
+.area-item--4 {
+    position: relative;
+    grid-area: banner;
+}
+.banner-text {
+    position: relative;
+    grid-row: 2/3;
+    grid-column: 4/7;
+    text-align: center;
+    align-self: center;
+}
+.banner-text-1 {
+    padding-left: 7vw;
+    padding-bottom: 10vw;
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: 'Coda Caption', sans-serif;
+}
+.banner-text-2 {
+    padding-left: 7vw;
+    padding-top: 4vw;
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: 'Caveat', cursive, Times, serif;
+}
+    /*gadets section*/
+h3 {
+    grid-row: 3/4;
+    grid-column: 1/7;
+    text-align: center;
+    align-self: center;
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 3vw;
+}    
+.area-item--5 {
+    grid-area: promo1;
+}
+.area-item--6 {
+    grid-area: promo2;
+}
+.area-item--7 {
+    grid-area: promo3;
+}
+.area-item--8 {
+    grid-area: promo4;
+}
+.area-item--9 {
+    grid-area: promo5;
+}
+.area-item--5, .area-item--6, .area-item--7, .area-item--8, .area-item--9 {
+    border: solid .5vw rgba(235, 233, 233, 0);
+}
+.area-item--5:hover, .area-item--6:hover, .area-item--7:hover, .area-item--8:hover, .area-item--9:hover {
+    border-bottom: solid 1vw yellow;
+    cursor: pointer;
+}
+/*.area-container :nth-of-type(n+5):nth-of-type(-n+9):hover {
+    border-bottom: solid 1vw rgb(235, 234, 9);
+    cursor: pointer;
+}*/
+/*advantages section*/
+.area-item--10 {
+    grid-area: advantages;
+    background-color: #EC5C37;    
+}
+.advantages {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    text-align: center;
+    background-color: orange;
+    font-size: 1.3vw;
+    font-family: 'Caveat', cursive, Times, serif;
+}
+.advantages1:hover, .advantages2:hover, .advantages3:hover, .advantages4:hover {
+    letter-spacing: .2vw;
+}
+.advantages1 {padding-top: 6vw;}
+.advantages2 {padding-top: 4vw;}
+.advantages3 {padding-top: 5vw;}
+.advantages4 {padding-top: 5vw;}
+
+.advantages5 {
+    grid-row: 6/7;
+    grid-column: 3/5;
+    text-align: center;
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 2vw;
+    font-weight: 900;
+    color: white;
+}
+.advantages6 {
+    grid-row: 6/7;
+    grid-column: 3/5;
+    text-align: right;
+    font-family: 'Caveat', cursive, Times, serif;
+    font-size: 1.7vw;
+    padding-top: 4vw;
+    padding-right: 1vw;
+}
+.icon-diamond {
+    background: url(../images/icon-diamond.png) no-repeat;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    margin-left: 6vw;
+    margin-top: 1vw;    
+}
+.icon-diamond:hover {
+    background: url(../images/icon-diamond-hover.png) no-repeat;
+}
+.icon-infinite {
+    background: url(../images/icon-infinite.png) no-repeat;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    margin-left: 6vw;
+    margin-top: 9vw;
+}
+.icon-infinite:hover {background: url(../images/icon-infinite-hover.png) no-repeat;}
+.icon-bonus {
+    background: url(../images/icons-bonus.png) no-repeat;    
+    grid-row: 6/7;
+    grid-column: 2/3;
+    margin-left: 6vw;
+    margin-top: 17vw;
+}
+.icon-bonus:hover {background: url(../images/icons-bonus-hover.png) no-repeat;}
+.icon-discount {
+    background: url(../images/icon-discount.png) no-repeat;    
+    grid-row: 6/7;
+    grid-column: 2/3;
+    margin-left: 5vw;
+    margin-top: 25vw;
+}
+.icon-discount:hover {background: url(../images/icon-discount-hover.png) no-repeat;}
+.splashimage {
+    grid-row: 6/7;
+    grid-column: 3/5;
+    width: 23vw;
+    height: 1vw;
+    padding-top: 9vw;
+    padding-left: 12vw;
+}
+.cardimage {
+    grid-row: 6/7;
+    grid-column: 3/5;
+    width: 23vw;
+    height: 16vw;
+    transform: rotate(45deg);
+    padding-top: 15vw;
+    padding-left: 13vw;    
+}
+/*form section*/
+.area-item--11 {
+    grid-area: form;
+}
+.area-item--12 {
+    grid-area: review1;
+}
+.area-item--13 {
+    grid-area: review2;
+}
+.area-item--14 {
+    grid-area: review3;
+}
+.area-item--15 {
+    grid-area: review4;
+}
+.area-item--16 {
+    grid-area: review5;
+}
+.area-item--17 {
+    grid-area: footer;
+}
