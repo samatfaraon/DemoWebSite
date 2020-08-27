@@ -220,6 +220,11 @@ h3 {
     margin-left: 6vw;
     box-shadow: 5px 5px 20px 1px #000000;
 }
+.cardimage:hover {
+    box-shadow: 5px 5px 15px 5px #FFFD22;
+    width: 25vw;
+    height: 18vw;
+}
 /*form section*/
 .area-item--11 {
     grid-area: form;
