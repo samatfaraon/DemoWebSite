@@ -228,6 +228,20 @@ h3 {
 /*form section*/
 .area-item--11 {
     grid-area: form;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+.form {
+    padding-top: 5vw;
+    font-size: 2vw;
+    font-weight: 900;
+}
+.button {
+    font-size: 2vw;
+    font-weight: 900;
+    width: 22vw;
+    border: solid red;
+    border-radius: 10vw;
 }
 .area-item--12 {
     grid-area: review1;
