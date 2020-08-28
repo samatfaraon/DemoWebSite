@@ -230,9 +230,10 @@ h3 {
     grid-area: form;
     text-align: center;
     background-color: lightsteelblue;
+    
 }
 .form {
-    padding-top: 5vw;
+    margin-top: 3vw;
     font-size: 2vw;
     font-weight: 900;
 }
@@ -242,6 +243,11 @@ h3 {
     width: 22vw;
     border: solid red;
     border-radius: 10vw;
+    margin-top: .1vw;
+}
+.input {    
+    width: 20vw;
+    height: 2vw;
 }
 .area-item--12 {
     grid-area: review1;
